@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PDFOnline</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="  {{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="  {{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+      <link href="https://prodblobcdn.azureedge.net/content/assets/css/bootstrap.min.css?v=20220406045720" rel="stylesheet" media="all" />
+    
+  <link href="  {{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/aos/aosos.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="  {{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.7.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">EditPdf</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <!---<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>--->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section style="display: flex; justify-content: center;margin-top:0px;padding:0px;" id="hero" class="d-flex align-items-center">
+
+  <form enctype="multipart/form-data"
+method="POST">
+
+ <label for="inputImage" class="upload-area">
+<div  style="margin-top: 0px ;padding: 0px;" class="dashes">
+<h2 id="input_index_h2" class="main-subheader">Convierta fácilmente hacia y desde PDF en segundos.</h2>
+<div id="div_1_form_index" class="brand-btn-container brand-color">
+<a id="a_form_index" class="btn-wrapper upload-btn">
+<div id="div_2_form_index" class="button-icon" title="Añadir más archivos">
+<svg id="svg_form_index" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none">
+<defs></defs><path fill="#fff" fill-rule="evenodd" d="M5.6.6c-.7 0-1.3.5-1.3 1.2v2.5H1.8a1.3 1.3 0 000 2.5h2.5v2.5a1.3 1.3 0 102.5 0V6.8h2.5a1.2 1.2 0 100-2.5H6.8V1.8c0-.7-.5-1.2-1.2-1.2z" clip-rule="evenodd"></path>
+</svg>
+</div>
+<span id="span_form_index"class="btn-label">
+Seleccionar archivo
+</span>
+</a>
+</div>
+<div class="external-repos">
+<div class="icon google-icon brand-border-on-hover js-google-picker-btn" title="Seleccionar un archivo de Google Drive"></div>
+<div class="icon dropbox-icon brand-border-on-hover js-dropbox-choose-btn" title="Seleccione el archivo de Dropbox"></div>
+<div class="icon url-icon brand-border-on-hover js-url-input-btn" title="Cargar el archivo desde la URL"></div>
+</div>
+<input class="file-upload-input" type="file" id="inputImage" multiple="multiple" style="display: none;">
+</div>
+</label>
+<div style="display: flex;
+  justify-content: center;">
+
+  <label style="text-align: center;padding-top:20px;" for="submit"><span style="font-family: ibm plex sans,sans-serif;color: gray;">submit</span><input type="submit" style="display: none;" /></label>
+</div>
+
+
+</form>
+
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+<h2 id="input_index_h2" class="main-subheader"><strong>Convierta hacia PDF.</strong></h2>    
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#doc-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="DOC to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span id="images"  class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon2.svg') }}" />
+            </span>
+            Convert Word to PDF
+          </a>
+        </div>
+      </div>
+          
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#jpg-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="JPG to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon4.svg') }}" />
+            </span>
+            Convert JPG to PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#png-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PNG to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon4.svg') }}" />
+            </span>
+            Convert PNG to PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#excel-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="EXCEL to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon9.svg') }}" />
+            </span>
+            Convert EXCEL to PDF
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#ppt-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PPT to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon8.svg') }}" />
+            </span>
+            Convert PPT to PDF
+          </a>
+        </div>
+      </div>
+      <div id="ppt-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="ppt-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_ppt_pdf"> <input style="display: none;" type="FILE" name="file" id="files_ppt_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_ppt_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_ppt_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#tiff-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="TIFF to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon7.svg') }}" />
+            </span>
+            Convert TIFF to PDF
+          </a>
+        </div>
+      </div>
+      <div id="tiff-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="tiff-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_tiff_pdf"> <input style="display: none;" type="FILE" name="file" id="files_tiff_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_tiff_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_tiff_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#text-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="TEXT to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon13.svg') }}" />
+            </span>
+            Convert TEXT to PDF
+          </a>
+        </div>
+      </div>
+      <div id="text-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="text-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_text_pdf"> <input style="display: none;" type="FILE" name="file" id="files_text_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_text_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_text_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+    </div>
+<h2 id="input_index_h2" class="main-subheader"><strong>Convierta desde PDF.</strong></h2>
+
+    <div class="row">
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#compress-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="COMPRESS to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon12.svg') }}" />
+            </span>
+            Comprimir PDF
+          </a>
+        </div>
+      </div>
+      <div id="compress-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="pdf-zip" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_compress_pdf"> <input style="display: none;" type="FILE" name="file" id="files_compress_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_compress_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_compress_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf_doc-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to DOC" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon1.svg') }}" />
+            </span>
+            Convert PDF to DOCX
+          </a>
+        </div>
+      </div>
+      <div id="pdf_doc-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="pdf-word" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_pdf_word"> <input style="display: none;" type="FILE" name="file" id="files_pdf_word"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_pdf_word"> 
+                    convertir<input style="display: none;" id="input_submit_pdf_word" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+   </div>
+      <div id="doc-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="word-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_doc_pdf"> <input style="display: none;" type="FILE" name="file" id="files_doc_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_doc_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_doc_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <div id="jpg-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="jpg-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_jpg_pdf"> <input style="display: none;" type="FILE" name="file" id="files_jpg_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_jpg_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_jpg_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+      <div id="png-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="png-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_png_pdf"> <input style="display: none;" type="FILE" name="file" id="files_png_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_png_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_png_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+            <div id="excel-to-pdf-popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <form  action="excel-pdf" enctype="multipart/form-data"
+      method="POST">
+      
+      <label id="label_1" for="files_excel_pdf"> <input style="display: none;" type="FILE" name="file" id="files_excel_pdf"/> subir</label>
+      
+      
+                    <label id="label_1" for="input_submit_excel_pdf"> 
+                    convertir<input style="display: none;" id="input_submit_excel_pdf" type="submit" /></label>
+                    </form>
+                </div>
+            </div>
+        </div>          
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>PdfOnline.es</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="#https://t.me/Kiraprogramming">Kira</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="  {{ url_for('static', filename='assets/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="  {{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+  
+
+</body>
+
+</html>

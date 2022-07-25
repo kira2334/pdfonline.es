@@ -1,0 +1,11 @@
+from flask import Blueprint, send_file
+from bd import obtener_conexion
+assets = Blueprint('assets', __name__)
+
+@assets.route("/assets/img/logo.jpg")
+def accountList():
+    conexion = obtener_conexion()
+    with conexion.cursor() as cursor:
+       cursor.execute('SELECT static_url FROM admin_assets WHERE dinamic_url = "/assets/img/logo.jpg"')
+       url = cursor.fetchone()
+    return url

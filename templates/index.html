@@ -1,0 +1,1151 @@
+--<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PDFOnline</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="  {{ url_for('static', filename='assets/img/favicon.jpg') }}" rel="icon">
+  <link href="  {{ url_for('static', filename='assets/img/apple-touch-icon.jpg') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+      <link href="https://prodblobcdn.azureedge.net/content/assets/css/bootstrap.min.css?v=20220406045720" rel="stylesheet" media="all" />
+    
+  <link href="  {{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/aos/aosos.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="  {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="  {{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.7.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <h1><a href="index.html">EditPdf</a></h1>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="  {{ url_for('static', filename='assets/img/logo.jpg') }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <!--<li><a class="nav-link scrollto" href="#services">Services</a></li>-->
+          <li><a class="nav-link scrollto" href="pricing">Pricing</a></li>
+          <!---<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>--->
+          <li><a class="nav-link scrollto" href="contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section style="display: flex; justify-content: center;margin-top:0px;padding:0px;" id="id_hero" class="d-flex align-items-center">
+
+
+
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+   <div style="display: flex; justify-content: center;margin-top:0px;padding-top:100px;" >
+     <div style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    text-align: left;
+    color: #424a5c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    box-sizing: border-box;
+    font-family: inherit;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 100%;
+    display: block!important;' class="col-lg-6 d-none d-lg-block">
+					<div style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    color: #424a5c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    box-sizing: border-box;
+    font-family: inherit;
+    max-width: 658px;
+    margin: 0 auto;
+    box-shadow: 0 4px 27px rgba(0,0,0,.07);
+    border-radius: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 50px 50px;'class="right_content dz-clickable" id="imageDropZone" data-filesource="pdf" data-filedest="DOC">
+                      <h3 style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    color: #424a5b;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 10px;'>Upload Your Files</h3>
+                        <div style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    color: #424a5c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    border: 1px dashed #aaa;
+    padding: 20px 10px;' class="dropZone" id="dropZone">
+                            <div style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    color: #424a5c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    padding-bottom: 15px;'class="icon">
+                                <img src="https://prodblobcdn.azureedge.net/content/assets/images/pdf.svg?v=20220620120706" alt="Convert PDF to Word in Seconds" id="ptwa">
+                            </div>
+                            <h5 style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    color: #aaa;'>Drop PDF Here</h5>
+                            <p>or</p>
+                            
+                            <input style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    display: none!important;' type="file" id="draguploadpdf" class="hidden d-none" accept="application/pdf" data-filesource="pdf" data-filedest="DOC"> 
+							<label style='    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    line-height: 1.6;
+    box-sizing: border-box;
+    margin-bottom: .5rem;
+    outline: none;
+    transition: all 300ms linear 0s;
+    display: inline-block;
+    min-width: 230px;
+    padding: 20px 30px;
+    background: rgb(246,135,62);
+    border-radius: 4px;
+    border: 0;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;' id="unauthContentPlaceHolder_dragUploadPdfMain" for="draguploadpdf" class="custom_btn uploadFileBtn <%=Resources.Language.EnglishClass %> <%=Resources.Language.frHomeUploadClass %> <%=Resources.Language.itHomeUploadClass %> <%=Resources.Language.ptHomeUploadClass %> <%=Resources.Language.esHomeUploadClass %>">Upload PDF to Convert</label>
+                            
+
+                        </div>
+					</div>
+				</div>
+
+   </div>
+<h2 id="input_index_h2" class="main-subheader"><strong>Maximice su productividad con acceso ilimitado a nuestras herramientas PDF</strong></h2>    
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#doc-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="DOC to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span id="images"  class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon2.svg') }}" />
+            </span>
+            Convertir Word a PDF
+          </a>
+        </div>
+      </div>
+          
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#jpg-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="JPG to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon4.svg') }}" />
+            </span>
+            Convertir JPG a PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#png-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PNG to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon4.svg') }}" />
+            </span>
+            Convertir PNG a PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#excel-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="EXCEL to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon9.svg') }}" />
+            </span>
+            Convertir EXCEL a PDF
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#ppt-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PPT to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon8.svg') }}" />
+            </span>
+            Convertir PPT a PDF
+          </a>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#tiff-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="TIFF to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon7.svg') }}" />
+            </span>
+            Convertir TIFF a PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="product">
+          <a href="#text-to-pdf-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="TEXT to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon13.svg') }}" />
+            </span>
+            Convertir TEXT a PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#compress-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="COMPRESS to PDF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon12.svg') }}" />
+            </span>
+            Comprimir PDF
+          </a>
+        </div>
+      </div>
+           
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-word-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to DOC" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon1.svg') }}" />
+            </span>
+            Convertir PDF a DOCX
+          </a>
+        </div>
+      </div>
+    
+           
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-jpg-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to JPG" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon3.svg') }}" />
+            </span>
+            Convertir PDF a JPG
+          </a>
+        </div>
+      </div>
+    
+           
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-png-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to PNG" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon3.svg') }}" />
+            </span>
+            Convertir PDF a PNG
+          </a>
+        </div>
+      </div>
+    
+           
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-excel-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to EXCEL" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon9.svg') }}" />
+            </span>
+            Convertir PDF a EXCEL
+          </a>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-ppt-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to PPT" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon8.svg') }}" />
+            </span>
+            Convertir PDF a PPT
+          </a>
+        </div>
+      </div>
+    
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-tiff-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to TIFF" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon7.svg') }}" />
+            </span>
+            Convertir PDF a TIFF
+          </a>
+        </div>
+      </div>
+    
+    
+      <div class="col-md-3">
+
+        <div class="product">
+
+          <a href="#pdf-text-popup" id="doc-to-pdf" data-toggle="modal" data-target="#conversion-modal" data-modal-title="PDF to TEXT" data-modal-body="Drag and drop your file here to upload">
+            <span class="images"><img class="ing" src="  {{ url_for('static', filename='assets/img/icon13.svg') }}" />
+            </span>
+            Convertir PDF a TEXT
+          </a>
+        </div>
+      </div>
+    
+   </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>PdfOnline.es</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="#https://t.me/Kiraprogramming">Kira</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+   <!-----popup----->
+    <div id="doc-to-pdf-popup" class="overlay">
+      
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF to DOC</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="doc-pdf" method="post" action="word-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="doc-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="doc-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["doc-pdf"].submit()'>
+                        <label for="doc-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="doc-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="jpg-to-pdf-popup" class="overlay">
+      
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">JPG A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="jpg-pdf" method="post" action="jpg-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="jpg-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="jpg-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["jpg-pdf"].submit()'>
+                        <label for="jpg-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="jpg-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="png-to-pdf-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PNG A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="png-pdf" method="post" action="png-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="png-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="png-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["png-pdf"].submit()'>
+                        <label for="png-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="png-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>       
+    </div>       
+    </div>       
+   <div id="excel-to-pdf-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">EXCEL A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="excel-pdf" method="post" action="excel-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="excel-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="excel-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["excel-pdf"].submit()'>
+                        <label for="excel-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="excel-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>     
+   <div id="ppt-to-pdf-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PPT A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="ppt-pdf" method="post" action="ppt-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</dr>
+                        <label for="ppt-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="ppt-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["ppt-pdf"].submit()'>
+                        <label for="ppt-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="ppt-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="tiff-to-pdf-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">TIFF A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="tiff-pdf" method="post" action="tiff-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="tiff-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="tiff-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["tiff-pdf"].submit()'>
+                        <label for="tiff-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="tiff-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="text-to-pdf-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">TEXT A PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="text-pdf" method="post" action="text-pdf" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="text-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="text-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["text-pdf"].submit()'>
+                        <label for="text-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="text-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="compress-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">Compress PDF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-zip" method="post" action="pdf-zip" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="Compress-to-pdf-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="Compress-to-pdf-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-zip"].submit()'>
+                        <label for="Compress-to-pdf-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="Compress-to-pdf-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="pdf-word-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A WORD</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-word" method="post" action="pdf-word" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-word-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-word-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-word"].submit()'>
+                        <label for="pdf-to-word-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-word-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>      
+   <div id="pdf-jpg-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A JPG</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-jpg" method="post" action="pdf-jpg" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-jpg-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-jpg-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-jpg"].submit()'>
+                        <label for="pdf-to-jpg-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-jpg-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>   
+   <div id="pdf-png-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A PNG</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-png" method="post" action="pdf-png" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-png-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-png-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-png"].submit()'>
+                        <label for="pdf-to-png-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-png-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>      
+   <div id="pdf-excel-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A EXCEL</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-excel" method="post" action="pdf-excel" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-excel-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-excel-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-excel"].submit()'>
+                        <label for="pdf-to-excel-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-excel-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>  
+   <div id="pdf-ppt-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A PPT</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-ppt" method="post" action="pdf-ppt" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-ppt-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-ppt-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-ppt"].submit()'>
+                        <label for="pdf-to-ppt-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-ppt-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>      
+   <div id="pdf-tiff-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A TIFF</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-tiff" method="post" action="pdf-tiff" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-tiff-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-tiff-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-tiff"].submit()'>
+                        <label for="pdf-to-tiff-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-tiff-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div id="pdf-text-popup" class="overlay">
+<div class="modal fade show" id="conversion-modal" tabindex="-1" role="dialog" aria-labelledby="conversion-modal-label" style="z-index: 55555; display: block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="conversion-modal-label">PDF A TEXT</h4>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><a href="#"><span aria-hidden="true">×</span></a></button>
+                    
+                </div>
+
+                <form name="pdf-text" method="post" action="pdf-text" enctype="multipart/form-data">
+
+
+
+                    <div class="modal-body text-center drag-and-drop-zone dz-clickable" id="genericDropZone">
+                        <div class="modal-body-text" style="font-size: 18px;">Convierte facil y rapido</div>
+                        <br>
+                        <br>
+                        <label for="pdf-to-text-popup-file" class="btn btn-primary">SELECCIONE SU ARCHIVO......</label>
+                        <input name="file" type="file" class="hidden" id="pdf-to-text-popup-file" accept="application/pdf" data-filesource="pdf" data-filedest="DOC" onchange='document.forms["pdf-text"].submit()'>
+                        <label for="pdf-to-text-popup-submit" style="text-align: center;display: block;">subir</label>
+                        <input id="pdf-to-text-popup-submit" style="display: none;" type="submit">
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>      
+        <!--popup fin-->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="  {{ url_for('static', filename='assets/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="  {{ url_for('static', filename='assets/js/main.js') }}"></script>
+  <script src="  {{ url_for('static', filename='assets/js/script.js') }}"></script>
+
+  
+
+</body>
+
+</html>
+') }}"></script>
+
+  
+
+</body>
+
+</html>
+tml>
+>
+tml>
+
+  
+
+</body>
+
+</html>
+
+
+  
+
+</body>
+
+</html>
+
