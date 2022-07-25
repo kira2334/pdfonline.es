@@ -6,5 +6,5 @@ admin_panel = Blueprint('admin_panel', __name__)
 def index_admin():
    return render_template("repos/admin_template/index.html")
 @admin_panel.route("/admin/<path:ruta>")
-def routs_admin():
+def routs_admin(ruta = None):
    return render_template("repos/admin_template/"+ ruta)
